@@ -1,0 +1,6 @@
+if SHIELD_TRIBE
+
+config ZMK_KEYBOARD_NAME
+    default "Tribe"
+
+endif
