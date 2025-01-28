@@ -1,0 +1,27 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+&mt {
+    quick-tap-ms = <200>;
+    flavor = "tap-preferred";
+    require-prior-idle-ms = <125>;
+};
+
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+
+            &kp A    &kp N1   &kp N2   &kp N3   &kp N4   &kp N5   &kp N6   &kp N7   &kp N8   &kp N9   &kp N0   &kp EQUAL 
+            &kp B    &kp Q    &kp W    &kp E    &kp R    &kp T    &kp Y    &kp U    &kp I    &kp O    &kp P    &kp MINUS 
+            &kp C    &mt LSHIFT A &mt LALT S &mt LCTRL D &mt LGUI F &kp G    &kp H    &mt RGUI J &mt RCTRL K &mt RALT L &mt RSHIFT SEMI &kp SINGLE_QUOTE
+            &kp D    &kp Z    &kp X    &kp C    &kp V    &kp B    &kp N    &kp M    &kp COMMA &kp DOT &kp SLASH &kp D 
+                                       &kp ESC  &kp TAB  &kp SPACE &kp ENTER &kp BSPC &kp DEL
+
+            >;
+        };
+    };
+ };
