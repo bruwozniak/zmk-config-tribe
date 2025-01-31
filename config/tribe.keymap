@@ -1,6 +1,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500
 
 &mt {
@@ -69,7 +71,7 @@
             bindings = <
 &trans  &kp F1  &kp F2                             &kp F3            &kp F4            &kp F5  &kp F6    &kp F7    &kp F8  &kp F9     &kp F10        &trans
 &trans  &trans  &trans                             &trans            &trans            &trans  &trans    &trans    &trans  &trans     &trans         &trans
-&trans  &trans  &ht_kp LEFT_BRACKET RIGHT_BRACKET  &ht_kp LBRC RBRC  &ht_kp LPAR RPAR  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp GRAVE      &trans
+&trans  &trans  &ht_kp RIGHT_BRACKET LEFT_BRACKET  &ht_kp RBRC LBRC  &ht_kp RPAR LPAR  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp GRAVE      &trans
 &trans  &trans  &trans                             &trans            &trans            &trans  &trans    &trans    &trans  &trans     &kp BACKSLASH  &trans
                                                    &trans            &trans            &trans  &trans    &trans    &trans
             >;
