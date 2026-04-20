@@ -1,2 +1,5 @@
 config SHIELD_TRIBE
     def_bool $(shields_list_contains,tribe)
+
+config SHIELD_TRIBE_DONGLE
+    def_bool $(shields_list_contains,tribe_dongle)
